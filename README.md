@@ -1,18 +1,70 @@
-## Getting Started
+# Tugas Minggu 3 - Object Oriented Programming
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Deskripsi
 
-## Folder Structure
+Repo ini berisi program Java sederhana yang menunjukkan konsep OOP dasar dengan penggunaan enkapsulasi, inheritance, dan interface. Program ini terdiri dari kelas Employee, BankAccount, Student, dan Main yang berfungsi untuk mengelola data karyawan, rekening bank, dan mahasiswa.
 
-The workspace contains two folders by default, where:
+## Struktur Folder
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+```bash
+Tugas_Yuto_Minggu3/
+├── src/
+│ ├── Employee/
+│ │ ├── Employee.java
+│ │ └── Payable.java
+│ ├── BankAccount/
+│ │ └── BankAccount.java
+│ ├── Student/
+│ │ └── Student.java
+│ └── Main.java
+├── bin/
+├── lib/
+└── README.md
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Struktur File dan Penjelasan
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### src/
 
-## Dependency Management
+Folder ini berisi semua file source code untuk program Java.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### src/Employee/
+
+- **Employee.java**: Kelas Employee yang merepresentasikan seorang karyawan.
+- **Payable.java**: Interface Payable yang mendefinisikan method calculatePayment().
+
+### src/BankAccount/
+
+- **BankAccount.java**: Kelas BankAccount yang merepresentasikan sebuah rekening bank.
+
+### src/Student/
+
+- **Student.java**: Kelas Student yang merepresentasikan seorang mahasiswa.
+
+- **Main.java**: Kelas Main yang berisi method utama untuk menjalankan program.
+
+## Cara Penggunaan
+
+Kompilasi semua file Java:
+
+```bash
+javac Main.java Employee/*.java BankAccount/*.java Student/*.java
+```
+
+Kemudian jalankan program:
+
+```bash
+java Main.java
+```
+
+## Panduan Penggunaan
+
+- Pastikan Anda memiliki Java Development Kit (JDK) terinstal di komputer Anda.
+- Untuk mengubah atau mengembangkan program, edit file yang ada di folder src/.
+- Jika ingin menambahkan library eksternal, letakkan file JAR di folder lib/ dan tambahkan ke classpath saat kompilasi atau jalankan program.
+- Hasil kompilasi akan disimpan di folder bin/.
+- Untuk informasi lebih lanjut tentang setiap kelas dan method, lihat penjelasan di dalam file source code masing-masing.
+
+### Catatan
+
+- Pastikan untuk menjalankan perintah-perintah kompilasi dan eksekusi program dari root folder (contoh: Tugas_Yuto_Minggu3/).
